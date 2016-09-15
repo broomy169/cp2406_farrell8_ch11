@@ -12,10 +12,7 @@ public abstract class DebugBoat
    public boolean equals(DebugBoat otherBoat)
    {
       boolean result;
-      if((passengers == otherBoat.passengers) && (power.equals(otherBoat.power)))
-         result = true;
-      else
-         result = false;
+      result = (passengers == otherBoat.passengers) && (power.equals(otherBoat.power));
       return result;
    }
    public String toString()
